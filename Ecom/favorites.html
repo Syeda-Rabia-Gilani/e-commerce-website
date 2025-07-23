@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorites - ShopEase</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="favorites.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ShopEase</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+                <a href="favorites.html" class="active"><i class="fas fa-heart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favorites-section">
+            <div class="container">
+                <div class="section-header">
+                    <h1>My Favorites</h1>
+                    <p>Your collection of favorite products</p>
+                </div>
+
+                <div class="favorites-container">
+                    <!-- Empty favorites message -->
+                    <div class="empty-favorites" id="emptyFavorites">
+                        <i class="fas fa-heart"></i>
+                        <h2>No favorites yet</h2>
+                        <p>Start adding items to your favorites list by clicking the heart icon on products you love.</p>
+                        <a href="index.html" class="btn btn-primary">Browse Products</a>
+                    </div>
+
+                    <!-- Favorites grid -->
+                    <div class="favorites-grid" id="favoritesGrid">
+                        <!-- Sample Favorite Item -->
+                        <div class="favorite-item">
+                            <div class="item-image">
+                                <img src="images/product1.jpg" alt="Product Name">
+                                <button class="remove-favorite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+                            <div class="item-details">
+                                <h3>Product Name</h3>
+                                <p class="item-category">Category</p>
+                                <div class="item-price">$99.99</div>
+                                <div class="item-actions">
+                                    <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                                    <button class="btn btn-secondary quick-view">Quick View</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More favorite items can be added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recently Viewed Section -->
+        <section class="recently-viewed">
+            <div class="container">
+                <h2>Recently Viewed</h2>
+                <div class="products-grid">
+                    <!-- Sample Recently Viewed Product -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/product2.jpg" alt="Recent Product">
+                            <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-info">
+                            <h3>Recent Product</h3>
+                            <p class="price">$79.99</p>
+                            <button class="btn btn-secondary">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- More recently viewed products can be added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEase</h3>
+                    <p>Your one-stop shop for all your needs. Quality products, great prices, and excellent service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">My Account</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@shopease.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Main St, City, Country</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="favorites.js"></script>
+</body>
+</html> 

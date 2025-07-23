@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - ShopEase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/product-details.css">
+    <link rel="stylesheet" href="base.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>ShopEase</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="favorites.html" class="icon-link">
+                    <i class="far fa-heart"></i>
+                    <span class="count" id="favCount">0</span>
+                </a>
+                <a href="cart.html" class="icon-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="count" id="cartCount">0</span>
+                </a>
+                <a href="account.html" class="icon-link">
+                    <i class="far fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> /
+            <a href="products.html">Products</a> /
+            <span id="productName">Product Name</span>
+        </div>
+
+        <section class="product-details">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1" alt="Product Image" id="mainImage">
+                </div>
+                <div class="thumbnail-list">
+                    <button class="thumbnail active">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1" alt="Thumbnail 1">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1" alt="Thumbnail 2">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1" alt="Thumbnail 3">
+                    </button>
+                    <button class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1" alt="Thumbnail 4">
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-header">
+                    <h1>Wireless Headphones</h1>
+                    <button class="favorite-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <span class="rating-count">(24 reviews)</span>
+                </div>
+
+                <div class="product-price">
+                    <span class="current-price">$99.99</span>
+                    <span class="original-price">$129.99</span>
+                    <span class="discount">-20%</span>
+                </div>
+
+                <div class="product-description">
+                    <p>Experience premium sound quality with our wireless headphones. Features include active noise cancellation, 30-hour battery life, and comfortable over-ear design.</p>
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label>Color:</label>
+                        <div class="color-options">
+                            <button class="color-option active" style="background-color: #000000;" data-color="Black"></button>
+                            <button class="color-option" style="background-color: #FFFFFF;" data-color="White"></button>
+                            <button class="color-option" style="background-color: #B76E79;" data-color="Rose Gold"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quantity-selector">
+                    <label>Quantity:</label>
+                    <div class="quantity-controls">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="stock-status in-stock">
+                    <i class="fas fa-check-circle"></i>
+                    In Stock
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                    <button class="btn btn-secondary buy-now">
+                        Buy Now
+                    </button>
+                </div>
+
+                <div class="delivery-info">
+                    <div class="info-item">
+                        <i class="fas fa-truck"></i>
+                        <div>
+                            <h4>Free Delivery</h4>
+                            <p>For orders over $50</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-undo"></i>
+                        <div>
+                            <h4>30 Days Return</h4>
+                            <p>If goods have problems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-details-tabs">
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specifications">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+
+            <div class="tab-content active" id="description">
+                <h2>Product Description</h2>
+                <p>Experience music like never before with our premium wireless headphones. These headphones combine superior sound quality with cutting-edge technology to deliver an immersive audio experience.</p>
+                
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Active Noise Cancellation</li>
+                    <li>30-hour battery life</li>
+                    <li>Bluetooth 5.0 connectivity</li>
+                    <li>Built-in voice assistant</li>
+                    <li>Comfortable over-ear design</li>
+                    <li>Quick charge capability</li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="specifications">
+                <h2>Technical Specifications</h2>
+                <table class="specs-table">
+                    <tr>
+                        <td>Driver Size</td>
+                        <td>40mm</td>
+                    </tr>
+                    <tr>
+                        <td>Frequency Response</td>
+                        <td>20Hz - 20kHz</td>
+                    </tr>
+                    <tr>
+                        <td>Impedance</td>
+                        <td>32 Ohm</td>
+                    </tr>
+                    <tr>
+                        <td>Battery Life</td>
+                        <td>30 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Charging Time</td>
+                        <td>2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td>250g</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="tab-content" id="reviews">
+                <div class="reviews-header">
+                    <h2>Customer Reviews</h2>
+                    <button class="btn btn-primary write-review">Write a Review</button>
+                </div>
+
+                <div class="rating-summary">
+                    <div class="average-rating">
+                        <h3>4.0</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p>Based on 24 reviews</p>
+                    </div>
+                    <div class="rating-bars">
+                        <div class="rating-bar">
+                            <span>5 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 60%"></div>
+                            </div>
+                            <span>12</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>4 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 25%"></div>
+                            </div>
+                            <span>6</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>3 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 10%"></div>
+                            </div>
+                            <span>3</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>2 stars</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 5%"></div>
+                            </div>
+                            <span>2</span>
+                        </div>
+                        <div class="rating-bar">
+                            <span>1 star</span>
+                            <div class="bar">
+                                <div class="fill" style="width: 1%"></div>
+                            </div>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-list">
+                    <div class="review-item">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <img src="images/avatar1.jpg" alt="User Avatar" class="avatar">
+                                <div>
+                                    <h4>John Doe</h4>
+                                    <p class="review-date">2 days ago</p>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>Amazing sound quality and comfortable to wear for long periods. The noise cancellation is impressive and battery life is excellent.</p>
+                        </div>
+                        <div class="review-images">
+                            <img src="images/review1.jpg" alt="Review Image">
+                            <img src="images/review2.jpg" alt="Review Image">
+                        </div>
+                        <div class="review-footer">
+                            <button class="helpful-btn">
+                                <i class="far fa-thumbs-up"></i>
+                                Helpful (12)
+                            </button>
+                            <button class="report-btn">
+                                <i class="far fa-flag"></i>
+                                Report
+                            </button>
+                        </div>
+                    </div>
+                    <!-- More review items -->
+                </div>
+
+                <button class="btn btn-secondary load-more">Load More Reviews</button>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <h2>Related Products</h2>
+            <div class="products-grid">
+                <!-- Related products will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+</body>
+</html> 

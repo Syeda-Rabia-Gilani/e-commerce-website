@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product - ShopEase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>ShopEase</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></a>
+                <a href="favorites.html"><i class="fas fa-heart"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-section">
+            <div class="container">
+                <div class="product-grid">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Smart Watch">
+                        </div>
+                        <div class="thumbnail-grid">
+                            <div class="thumbnail active">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Smart Watch">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Smart Watch">
+                            </div>
+                            <div class="thumbnail">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Smart Watch">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h1>Smart Watch Pro</h1>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128 reviews)</span>
+                            </div>
+                            <div class="availability">
+                                <i class="fas fa-check-circle"></i>
+                                <span>In Stock</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <span class="current">$199.99</span>
+                            <span class="original">$249.99</span>
+                            <span class="discount">20% OFF</span>
+                        </div>
+                        <div class="product-description">
+                            <p>The Smart Watch Pro is the perfect companion for your active lifestyle. With advanced health tracking, notifications, and a sleek design, it's everything you need in a smartwatch.</p>
+                            <ul class="features">
+                                <li><i class="fas fa-check"></i> Heart rate monitoring</li>
+                                <li><i class="fas fa-check"></i> Sleep tracking</li>
+                                <li><i class="fas fa-check"></i> Water resistant</li>
+                                <li><i class="fas fa-check"></i> 7-day battery life</li>
+                            </ul>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="btn-quantity">-</button>
+                                <input type="number" value="1" min="1" max="10">
+                                <button class="btn-quantity">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                                Add to Cart
+                            </button>
+                            <button class="btn btn-secondary add-to-wishlist">
+                                <i class="fas fa-heart"></i>
+                                Add to Wishlist
+                            </button>
+                        </div>
+                        <div class="product-meta-bottom">
+                            <div class="meta-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Free shipping on orders over $50</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30-day return policy</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Secure payment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3>Product Description</h3>
+                        <p>The Smart Watch Pro is designed for those who want to stay connected and track their fitness goals. With its sleek design and advanced features, it's the perfect companion for your active lifestyle.</p>
+                        <p>Key features include:</p>
+                        <ul>
+                            <li>Advanced heart rate monitoring</li>
+                            <li>Sleep tracking and analysis</li>
+                            <li>Water resistant up to 50 meters</li>
+                            <li>7-day battery life with fast charging</li>
+                            <li>Notifications for calls, messages, and apps</li>
+                            <li>Multiple sports modes</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="specifications">
+                        <h3>Technical Specifications</h3>
+                        <table>
+                            <tr>
+                                <th>Display</th>
+                                <td>1.4" AMOLED, 454 x 454 pixels</td>
+                            </tr>
+                            <tr>
+                                <th>Battery</th>
+                                <td>300mAh, up to 7 days</td>
+                            </tr>
+                            <tr>
+                                <th>Water Resistance</th>
+                                <td>5 ATM (50 meters)</td>
+                            </tr>
+                            <tr>
+                                <th>Connectivity</th>
+                                <td>Bluetooth 5.0, GPS</td>
+                            </tr>
+                            <tr>
+                                <th>Compatibility</th>
+                                <td>iOS 12.0+, Android 6.0+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review-summary">
+                            <div class="average-rating">
+                                <span class="rating-number">4.5</span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="review-count">Based on 128 reviews</span>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 5%"></div>
+                                    </div>
+                                    <span>5%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 stars</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 3%"></div>
+                                    </div>
+                                    <span>3%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 star</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ShopEase</h3>
+                <p>Your one-stop shop for all your needs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopease.com</p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
